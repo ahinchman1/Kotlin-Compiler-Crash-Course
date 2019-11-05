@@ -3,6 +3,10 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
 
 ![Alt Text](https://media.giphy.com/media/3o6Mb774rffWwh0AXm/giphy.gif)
 
+## Lexer
+The lexer phase breaks source code text into a sequence of lexical tokens:
+* [KotlinLexer.kt](https://github.com/Kotlin/kotlin-spec/blob/master/grammar/src/main/antlr/KotlinLexer.g4)
+
 ## Parser and PSI/AST
 * [JetBrains IntelliJ SDK Documentation: Implementing Parser and PSI](https://www.jetbrains.org/intellij/sdk/docs/reference_guide/custom_language_support/implementing_parser_and_psi.html)
 * [JetBrains Plugins: PSIViewer Library](https://plugins.jetbrains.com/plugin/227-psiviewer)
