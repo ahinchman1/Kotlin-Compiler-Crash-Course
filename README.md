@@ -24,5 +24,7 @@ The AST is used intensively during semantic analysis, where the compiler checks 
 
 ## The Compiler
 
+![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Kotlin%20Compiler%20Modified.png)
+
 * [Github vektory79 kotlin-script-parser-test/blob/master/src/main/java/hello/CompileTest.kt](https://github.com/vektory79/kotlin-script-parser-test/blob/master/src/main/java/hello/CompileTest.kt)
 * [Wikipedia: Compiler](https://en.wikipedia.org/wiki/Compiler)
