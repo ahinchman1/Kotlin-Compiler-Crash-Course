@@ -18,8 +18,9 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
 * The back-end takes the optimized IR the middle end. It may perform more analysis, transformations + optimizations that are specific for the target CPU architecture 
     * Responsible for the multithreading and other parallel processing 
 
+[Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Kotlin_compiler.png)
 
-## Phases of the Frontend Compiler
+## Phases of the Frontend
 
 ### Lexer
 
@@ -80,8 +81,6 @@ The AST is used intensively during semantic analysis, where the compiler checks 
     * Resource and storage decisions
 
 ## More resources around the Kotlin Compiler
-
-![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Kotlin%20Compiler%20Modified.png)
 
 * [vektory79 CompileTest.kt](https://github.com/vektory79/kotlin-script-parser-test/blob/master/src/main/java/hello/CompileTest.kt)
 
