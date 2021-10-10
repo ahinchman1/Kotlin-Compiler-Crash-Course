@@ -25,7 +25,7 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
 ### Lexer
 
 The lexer phase breaks source code text into a sequence of lexical tokens:
-* [KotlinLexer.kt](https://github.com/Kotlin/kotlin-spec/blob/master/grammar/src/main/antlr/KotlinLexer.g4)
+* [KotlinLexer.g4](https://github.com/Kotlin/kotlin-spec/blob/master/grammar/src/main/antlr/KotlinLexer.g4)
 * This phase can then split into 2 phases:
     * Scanning: segments input text into syntactic units and assign them a category
     * Evaluating: converts lexemes into a processed val
@@ -34,7 +34,6 @@ The lexer phase breaks source code text into a sequence of lexical tokens:
 
 * Involves parsing the token sequence to identify the syntactic structure of the program
     * This phase typically builds a parse tree. A parse tree is often analyzed, augmented, and transformed by later phases in the compiler. 
-        * Builds symbol table 
 
 * [JetBrains IntelliJ SDK Documentation: Implementing Parser and PSI](https://www.jetbrains.org/intellij/sdk/docs/reference_guide/custom_language_support/implementing_parser_and_psi.html)
 * [JetBrains Plugins: PSIViewer Library](https://plugins.jetbrains.com/plugin/227-psiviewer)
