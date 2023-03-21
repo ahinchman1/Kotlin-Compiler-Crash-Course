@@ -18,7 +18,7 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
 * The back-end takes the optimized IR the middle end. It may perform more analysis, transformations + optimizations that are specific for the target CPU architecture 
     * Responsible for the multithreading and other parallel processing 
 
-![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Kotlin_compiler.png)
+![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Updated_kotlin_compiler.png)
 
 ## Phases of the Frontend
 
