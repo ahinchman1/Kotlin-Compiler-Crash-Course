@@ -9,9 +9,9 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
 * The frontend verifies syntax and semantics. For statically-typed languages, it performs type-checking by collecting type information
     * If the input program is syntactically incorrect, or has a type error, it generates error and/or warning messages, usually identifying the location in the source code
     * Other aspects of the frontend:
-        * Lexical analysis
-        * Syntax analysis
-        * Semantic analysis
+        * Lexical analysis (parsing phase)
+        * Syntax analysis  (parsing phase)
+        * Semantic analysis (resolution phase)
     * The frontend transforms the input program into an intermediate representation 
 * The middle-end performs optimizations on IR that are independent of the CPU architecture being targets
     * i.e. removing dead code, unreachable code, discovery and propagation of constant value, refactoring
