@@ -1,6 +1,8 @@
 
 ## Resources, Links, and notes around testing
 
+![Alt Text](https://media.giphy.com/media/7GKolAlMDq4IHMZfy4/giphy.gif)
+
 ### Resources and additional links:
 * The K2 Compiler is going stable in Kotlin 2.0 by Roman Elizarov [JB] - https://blog.jetbrains.com/kotlin/2023/02/k2-kotlin-2-0/
 * The Road to the K2 Compiler by Svetlana Isaokva :https://blog.jetbrains.com/kotlin/2021/10/the-road-to-the-k2-compiler/
@@ -27,15 +29,14 @@
 * Converts Frontend IR into Backend IR - https://github.com/JetBrains/kotlin/blob/master/compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/FirKotlinToJvmBytecodeCompiler.kt#L189
 * Triggers the backend - https://github.com/JetBrains/kotlin/blob/master/compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/FirKotlinToJvmBytecodeCompiler.kt#L166
 
-### Setting up FIR testing
-- run ./gradlew publish
+### Setting up FIR testing [slack reference](https://kotlinlang.slack.com/archives/C7L3JB43G/p1622478290039200?thread_ts=1622478266.038500&cid=C7L3JB43G)
+- run `./gradlew publish`
 - Useful tests:
   - `FirDiagnosticTestGenerated` in `:compiler:fir:analysis-tests`: tests takes some program as input, give it to 
     the frontend and render diagnostics reported by the frontend
   - `FirBlackBoxCodegenTestGenerated` in `:compiler:fir:fir2ir`: tests takes some program as input, runs FIR, fir2ir and JVM IR backend and then runs `box` method from compiled code. If `box` returns `"OK"` then the test is passed
+- Add `myShinyTest.kt` to corresponding testData directory and run `./gradlew generateTests`, or hit **Generate All Tests** run configuration in in IDEA and it will add `testMyShiny`to corresponding test runner
 
 ### Analysis API
 - mixins for Analysis API: https://github.com/JetBrains/kotlin/blob/81336820e2865cdd3faa9ca7d3804037a8ab1a99/analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/KtAnalysisSession.kt
 - ComposableDeclarationChecker: https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/compiler-hosted/src/main/java/androidx/compose/compiler/plugins/kotlin/ComposableDeclarationChecker.kt
--
-- 
