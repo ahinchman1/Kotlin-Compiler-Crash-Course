@@ -1,5 +1,5 @@
 
-## Resources, Links, and notes around testing
+# Resources, Links, and notes around testing
 
 ![Alt Text](https://media.giphy.com/media/7GKolAlMDq4IHMZfy4/giphy.gif)
 
@@ -22,6 +22,10 @@
 * The Kotlin compiler - https://slack-chats.kotlinlang.org/t/8294557/hey-i-am-really-interested-in-studying-the-source-code-but-i#b8d76d63-3c33-4c84-8eb8-460fc438784d
 * Resolution notes - https://kotlinlang.slack.com/archives/C7L3JB43G/p1615394755006000 
     * https://docs.google.com/presentation/d/e/2PACX-1vTzajwYJfmUi_Nn2nJBULi9bszNmjbO3c8K8dHRnK7vgz3AELunB6J7sfBodC2sKoaKAHibgEt_XjaQ/pub?slide=id.g955e8c1462_0_45
+
+### Analysis API
+- mixins for Analysis API: https://github.com/JetBrains/kotlin/blob/81336820e2865cdd3faa9ca7d3804037a8ab1a99/analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/KtAnalysisSession.kt
+- ComposableDeclarationChecker: https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/compiler-hosted/src/main/java/androidx/compose/compiler/plugins/kotlin/ComposableDeclarationChecker.kt
 
 ## Code Environment setups
 
@@ -46,6 +50,3 @@
   - `FirBlackBoxCodegenTestGenerated` in `:compiler:fir:fir2ir`: tests takes some program as input, runs FIR, fir2ir and JVM IR backend and then runs `box` method from compiled code. If `box` returns `"OK"` then the test is passed
 - Add `myShinyTest.kt` to corresponding testData directory and run `./gradlew generateTests`, or hit **Generate All Tests** run configuration in in IDEA and it will add `testMyShiny`to corresponding test runner
 
-### Analysis API
-- mixins for Analysis API: https://github.com/JetBrains/kotlin/blob/81336820e2865cdd3faa9ca7d3804037a8ab1a99/analysis/analysis-api/src/org/jetbrains/kotlin/analysis/api/KtAnalysisSession.kt
-- ComposableDeclarationChecker: https://github.com/androidx/androidx/blob/androidx-main/compose/compiler/compiler-hosted/src/main/java/androidx/compose/compiler/plugins/kotlin/ComposableDeclarationChecker.kt
