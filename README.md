@@ -5,6 +5,8 @@ Article series on Medium:
 1. [Frontend: Parsing phase](https://medium.com/google-developer-experts/crash-course-on-the-kotlin-compiler-1-frontend-parsing-phase-9898490d922b)
 2. [WIP Frontend: Resolution phase](https://docs.google.com/document/d/17dBSxlXRW7PRD92QZGcGeotnsPSOsp0NSdnFXXZ41sg/edit?usp=sharing)
 
+Quick links, debugging notes, and more: https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/link-repo.md
+
 ![Alt Text](https://media.giphy.com/media/3o6Mb774rffWwh0AXm/giphy.gif)
 
 * A compiler is a computer program that translates computer code written in one programming language into another language: the target language.
