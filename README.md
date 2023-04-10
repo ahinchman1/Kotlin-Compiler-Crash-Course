@@ -1,6 +1,10 @@
 # Kotlin-Compiler-Crash-Course
 A repository of helpful sources to figure out what the Kotlin compiler really is. Consider this as more of scratchnotes hopefully useful to your Kotlin research.
 
+Article series on Medium:
+1. [Frontend: Parsing phase](https://medium.com/google-developer-experts/crash-course-on-the-kotlin-compiler-1-frontend-parsing-phase-9898490d922b)
+2. [WIP Frontend: Resolution phase](https://docs.google.com/document/d/17dBSxlXRW7PRD92QZGcGeotnsPSOsp0NSdnFXXZ41sg/edit?usp=sharing)
+
 ![Alt Text](https://media.giphy.com/media/3o6Mb774rffWwh0AXm/giphy.gif)
 
 * A compiler is a computer program that translates computer code written in one programming language into another language: the target language.
@@ -17,8 +21,17 @@ A repository of helpful sources to figure out what the Kotlin compiler really is
     * i.e. removing dead code, unreachable code, discovery and propagation of constant value, refactoring
 * The back-end takes the optimized IR the middle end. It may perform more analysis, transformations + optimizations that are specific for the target CPU architecture 
     * Responsible for the multithreading and other parallel processing 
+    
+## Kotlin Frontend
 
-![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Updated_kotlin_compiler.png)
+There are actually two frontends, k1 and k2. K2, otherwise known as FIR frontend, is the new frontend for Kotlin compiler, which will replace the existing frontend (FE10). 
+
+**Fe10 Frontend** 
+![Alt Text](k1_frontend.png)
+
+**Fir Frontend** 
+![Alt Text](k2_frontend.png)
+
 
 ## Phases of the Frontend
 
