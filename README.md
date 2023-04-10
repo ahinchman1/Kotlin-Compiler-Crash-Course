@@ -21,8 +21,17 @@ Article series on Medium:
     * i.e. removing dead code, unreachable code, discovery and propagation of constant value, refactoring
 * The back-end takes the optimized IR the middle end. It may perform more analysis, transformations + optimizations that are specific for the target CPU architecture 
     * Responsible for the multithreading and other parallel processing 
+    
+## Kotlin Frontend
 
-![Alt Text](https://github.com/ahinchman1/Kotlin-Compiler-Crash-Course/blob/master/Updated_kotlin_compiler.png)
+There are actually two frontends, k1 and k2. K2, otherwise known as FIR frontend, is the new frontend for Kotlin compiler, which will replace the existing frontend (FE10). 
+
+**Fe10 Frontend** 
+![Alt Text](k1_frontend.png)
+
+**Fir Frontend** 
+![Alt Text](k2_frontend.png)
+
 
 ## Phases of the Frontend
 
