@@ -23,6 +23,16 @@
 * Resolution notes - https://kotlinlang.slack.com/archives/C7L3JB43G/p1615394755006000 
     * https://docs.google.com/presentation/d/e/2PACX-1vTzajwYJfmUi_Nn2nJBULi9bszNmjbO3c8K8dHRnK7vgz3AELunB6J7sfBodC2sKoaKAHibgEt_XjaQ/pub?slide=id.g955e8c1462_0_45
 
+## Code Environment setups
+
+### Setting up the Kotlin compiler
+- build environment requirements are in https://github.com/JetBrains/kotlin Readme - Java 6 and Java 7 needed
+- run `./gradlew publish`
+
+### Setting up AndroidX Compose compiler plugin
+- https://android.googlesource.com/platform/frameworks/support/+/androidx-main/README.md
+- https://android.googlesource.com/platform/frameworks/support/+/androidx-main/docs/onboarding.md
+- once set up for AndroidX, cd to `frameworks/support` and run `ANDROIDX_PROJECTS=COMPOSE ./gradlew studio`
 
 ### Kotlin Compiler Debugging Points
 * Triggers frontend to resolve all the files https://github.com/JetBrains/kotlin/blob/master/compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/FirKotlinToJvmBytecodeCompiler.kt#L313
@@ -30,7 +40,6 @@
 * Triggers the backend - https://github.com/JetBrains/kotlin/blob/master/compiler/cli/src/org/jetbrains/kotlin/cli/jvm/compiler/FirKotlinToJvmBytecodeCompiler.kt#L166
 
 ### Setting up FIR testing [slack reference](https://kotlinlang.slack.com/archives/C7L3JB43G/p1622478290039200?thread_ts=1622478266.038500&cid=C7L3JB43G)
-- run `./gradlew publish`
 - Useful tests:
   - `FirDiagnosticTestGenerated` in `:compiler:fir:analysis-tests`: tests takes some program as input, give it to 
     the frontend and render diagnostics reported by the frontend
