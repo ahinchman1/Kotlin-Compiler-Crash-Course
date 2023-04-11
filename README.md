@@ -29,10 +29,10 @@ Quick links, debugging notes, and more: https://github.com/ahinchman1/Kotlin-Com
 There are actually two frontends, k1 and k2. K2, otherwise known as FIR frontend, is the new frontend for Kotlin compiler, which will replace the existing frontend (FE10). 
 
 **Fe10 Frontend** 
-![Alt Text](k1_frontend.png)
+![Alt Text](res/k1_frontend.png)
 
 **Fir Frontend** 
-![Alt Text](k2_frontend.png)
+![Alt Text](res/k2_frontend.png)
 
 
 ## Phases of the Frontend
